@@ -6,8 +6,6 @@ import 'package:multi_store/ui/navigation/screens/favorite/controller/favorite_c
 import 'package:multi_store/ui/navigation/screens/home/controller/home_controller.dart';
 import 'package:multi_store/ui/navigation/screens/setting/controller/setting_controller.dart';
 import 'package:multi_store/ui/navigation/screens/store/controller/store_controller.dart';
-
-import '../../navigation/screens/details/inner_category/controller/inner_category_controller.dart';
 import '../controller/main_controller.dart';
 
 
@@ -22,7 +20,6 @@ class MainBinding extends Bindings {
     Get.put<SettingController>(SettingController());
     Get.put<StoreController>(StoreController());
     Get.put<CategoryController>(CategoryController());
-    Get.put<InnerCategoryController>(InnerCategoryController());
 
   }
 }

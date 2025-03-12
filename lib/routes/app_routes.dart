@@ -8,8 +8,6 @@ import 'package:multi_store/ui/navigation/screens/cart/binding/cart_binding.dart
 import 'package:multi_store/ui/navigation/screens/cart/screen/cart_page.dart';
 import 'package:multi_store/ui/navigation/screens/category/binding/category_binding.dart';
 import 'package:multi_store/ui/navigation/screens/category/screen/category_page.dart';
-import 'package:multi_store/ui/navigation/screens/details/inner_category/binding/inner_category_binding.dart';
-import 'package:multi_store/ui/navigation/screens/details/inner_category/screen/inner_category_page.dart';
 import 'package:multi_store/ui/navigation/screens/favorite/binding/favorite_binding.dart';
 import 'package:multi_store/ui/navigation/screens/favorite/screen/favorite_page.dart';
 import 'package:multi_store/ui/navigation/screens/home/binding/home_binding.dart';
@@ -92,7 +90,7 @@ class AppPages {
     ),
     GetPage(
       name: PageName.settingPage,
-      page: () => const SettingPage(),
+      page: () =>  SettingPage(),
       binding: SettingBinding(),
     ),
     GetPage(
@@ -100,10 +98,6 @@ class AppPages {
       page: () => const StorePage(),
       binding: StoreBinding(),
     ),
-    GetPage(
-      name: PageName.innerCategoryPage,
-      page: () => InnerCategoryPage(category: Get.arguments,),
-      binding: InnerCategoryBinding(),
-    ),
+
   ];
 }

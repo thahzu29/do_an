@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:multi_store/common/base/widgets/app_button.dart';
-import 'package:multi_store/common/base/widgets/app_text_field.dart';
+import 'package:multi_store/common/base/widgets/common/app_button.dart';
+import 'package:multi_store/common/base/widgets/common/app_text_field.dart';
 import 'package:multi_store/common/base/widgets/base_page_widget.dart';
 import 'package:multi_store/resource/asset/app_images.dart';
 import 'package:multi_store/resource/theme/app_colors.dart';
@@ -14,6 +14,7 @@ class LoginPage extends BasePage<LoginController> {
 
   @override
   Widget build(BuildContext context) {
+    Get.put<LoginController>(LoginController());
     return Scaffold(
       backgroundColor: AppColors.white,
       body: Stack(

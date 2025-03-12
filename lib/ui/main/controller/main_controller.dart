@@ -21,7 +21,7 @@ class MainController extends BaseController {
     const CategoryPage(),
     const StorePage(),
     const FavoritePage(),
-    const SettingPage(),
+     SettingPage(),
   ];
 
   void changePage(int index) {

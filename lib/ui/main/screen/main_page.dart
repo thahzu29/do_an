@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:multi_store/common/base/widgets/app_navigation_bar.dart';
+import 'package:multi_store/common/base/widgets/common/app_navigation_bar.dart';
 import 'package:multi_store/resource/theme/app_colors.dart';
 import '../../../common/base/widgets/base_page_widget.dart';
 import '../controller/main_controller.dart';

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:multi_store/common/base/widgets/reusable_text_widget.dart';
+import 'package:multi_store/common/base/widgets/common/reusable_text_widget.dart';
 import 'package:multi_store/resource/theme/app_colors.dart';
 import 'package:multi_store/resource/theme/app_style.dart';
 import 'package:multi_store/routes/app_routes.dart';
-import '../../../ui/navigation/screens/category/controller/category_controller.dart';
+import 'package:multi_store/common/base/widgets/details/inner_category_page.dart';
+import '../../../../ui/navigation/screens/category/controller/category_controller.dart';
 
 class CategoryItemWidget extends StatelessWidget {
   const CategoryItemWidget({super.key});
@@ -44,7 +45,9 @@ class CategoryItemWidget extends StatelessWidget {
                 final category = controller.categories[index];
                 return InkWell(
                     onTap: (){
-                      Get.toNamed(PageName.innerCategoryPage,arguments: category);
+                    Navigator.push(context, MaterialPageRoute(builder: (context){
+                      return InnerCategoryPage(category: category,);
+                    }));
                     },
                   child: Column(
                     children: [

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
-import '../../../resource/asset/app_images.dart';
-import '../../../routes/app_routes.dart';
-import 'custom_search.dart';
+import '../../../../resource/asset/app_images.dart';
+import '../../../../routes/app_routes.dart';
+import '../common/custom_search.dart';
 
 class InnerHeaderWidget extends StatelessWidget {
   const InnerHeaderWidget({super.key});
@@ -21,7 +21,6 @@ class InnerHeaderWidget extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             fit: BoxFit.cover,
           ),
-          IconButton(onPressed: (){Get.toNamed(PageName.homePage);}, icon: Icon(Icons.arrow_back_ios,size: 40,)),
 
           const CustomSearch(),
 

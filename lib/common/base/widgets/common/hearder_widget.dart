@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:multi_store/common/base/widgets/custom_search.dart';
+import 'package:multi_store/common/base/widgets/common/custom_search.dart';
 import 'package:multi_store/resource/asset/app_images.dart';
 import 'package:multi_store/resource/theme/app_colors.dart';
 import 'package:multi_store/resource/theme/app_style.dart';
 
-import '../../../routes/app_routes.dart';
+import '../../../../routes/app_routes.dart';
 
-class HearderWidget extends StatelessWidget {
-  const HearderWidget({super.key});
+class HeaderWidget extends StatelessWidget {
+  final IconButton? icon;
+  const HeaderWidget({super.key,this.icon});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +24,13 @@ class HearderWidget extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             fit: BoxFit.cover,
           ),
-          const CustomSearch(),
+          if (icon != null)
+            Positioned(
+              left: 6,
+              top: 56,
+              child: icon!,
+            ),
+           CustomSearch(),
           // Text(
           //   "Eazezy",
           //   style: AppStyles.STYLE_36_BOLD.copyWith(
