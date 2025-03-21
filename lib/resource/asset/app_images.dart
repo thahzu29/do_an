@@ -8,15 +8,17 @@ class AppImages {
   static const icEyes = '${assetsIcon}eye.svg';
   static const icHome = '${assetsIcon}home.svg';
   static const icHeart = '${assetsIcon}heart.svg';
+  static const icHeartRed = '${assetsIcon}heart_red.svg';
   static const icCart = '${assetsIcon}cart.svg';
   static const icSetting ='${assetsIcon}settings.svg';
   static const icStore ='${assetsIcon}mart.svg';
   static const icSearch = '${assetsIcon}search.svg';
   static const icCamera = '${assetsIcon}camera.svg';
   static const icNoti ='${assetsIcon}noti.svg';
+  static const icPosition = '${assetsIcon}position.svg';
+  static const icEdit = '${assetsIcon}edit.svg';
   static const icArrowRight = '${assetsIcon}arrow_right.svg';
   static const icCategory = '${assetsIcon}category.svg';
-
     static const imgSearchBanner = '${assetsImage}searchBanner.jpeg';
     static const imgProfile ='${assetsImage}profile.png';
     static const imgLogo ='${assetsImage}logo.png';

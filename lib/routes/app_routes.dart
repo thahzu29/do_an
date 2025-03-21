@@ -1,24 +1,13 @@
 
 import 'package:get/get.dart';
-import 'package:multi_store/ui/authentication/login/binding/login_binding.dart';
-import 'package:multi_store/ui/authentication/login/screen/login_page.dart';
-import 'package:multi_store/ui/authentication/register/binding/register_binding.dart';
-import 'package:multi_store/ui/authentication/register/screen/register_page.dart';
-import 'package:multi_store/ui/navigation/screens/cart/binding/cart_binding.dart';
-import 'package:multi_store/ui/navigation/screens/cart/screen/cart_page.dart';
-import 'package:multi_store/ui/navigation/screens/category/binding/category_binding.dart';
-import 'package:multi_store/ui/navigation/screens/category/screen/category_page.dart';
-import 'package:multi_store/ui/navigation/screens/favorite/binding/favorite_binding.dart';
-import 'package:multi_store/ui/navigation/screens/favorite/screen/favorite_page.dart';
-import 'package:multi_store/ui/navigation/screens/home/binding/home_binding.dart';
-import 'package:multi_store/ui/navigation/screens/home/screen/home_page.dart';
-import 'package:multi_store/ui/navigation/screens/setting/binding/setting_binding.dart';
-import 'package:multi_store/ui/navigation/screens/setting/screen/setting_page.dart';
-import 'package:multi_store/ui/navigation/screens/store/binding/store_binding.dart';
-import 'package:multi_store/ui/navigation/screens/store/screen/store_page.dart';
+
 import 'package:multi_store/ui/started/binding/started_binding.dart';
 import 'package:multi_store/ui/started/screen/started_page.dart';
 
+import '../ui/authentication/login/binding/login_binding.dart';
+import '../ui/authentication/login/screen/login_page.dart';
+import '../ui/authentication/register/binding/register_binding.dart';
+import '../ui/authentication/register/screen/register_page.dart';
 import '../ui/main/binding/main_binding.dart';
 import '../ui/main/screen/main_page.dart';
 import '../ui/navigation/splash/binding/splash_binding.dart';
@@ -53,11 +42,11 @@ class AppPages {
       page: () => const StartedPage(),
       binding: StartedBinding(),
     ),
-    GetPage(
-      name: PageName.categoryPage,
-      page: () => const CategoryPage(),
-      binding: CategoryBinding(),
-    ),
+    // GetPage(
+    //   name: PageName.categoryPage,
+    //   page: () => const CategoryPage(),
+    //   binding: CategoryBinding(),
+    // ),
     GetPage(
       name: PageName.loginPage,
       page: () => const LoginPage(),
@@ -73,31 +62,31 @@ class AppPages {
       page: () => const MainPage(),
       binding: MainBinding(),
     ),
-    GetPage(
-      name: PageName.homePage,
-      page: () => const HomePage(),
-      binding: HomeBinding(),
-    ),
-    GetPage(
-      name: PageName.favoritePage,
-      page: () => const FavoritePage(),
-      binding: FavoriteBinding(),
-    ),
-    GetPage(
-      name: PageName.cartPage,
-      page: () => const CartPage(),
-      binding: CartBinding(),
-    ),
-    GetPage(
-      name: PageName.settingPage,
-      page: () =>  SettingPage(),
-      binding: SettingBinding(),
-    ),
-    GetPage(
-      name: PageName.storePage,
-      page: () => const StorePage(),
-      binding: StoreBinding(),
-    ),
+    // GetPage(
+    //   name: PageName.homePage,
+    //   page: () => const HomePage(),
+    //   binding: HomeBinding(),
+    // ),
+    // GetPage(
+    //   name: PageName.favoritePage,
+    //   page: () => const FavoritePage(),
+    //   binding: FavoriteBinding(),
+    // ),
+    // GetPage(
+    //   name: PageName.cartPage,
+    //   page: () => const CartPage(),
+    //   binding: CartBinding(),
+    // ),
+    // GetPage(
+    //   name: PageName.settingPage,
+    //   page: () =>  SettingPage(),
+    //   binding: SettingBinding(),
+    // ),
+    // GetPage(
+    //   name: PageName.storePage,
+    //   page: () => const StorePage(),
+    //   binding: StoreBinding(),
+    // ),
 
   ];
 }

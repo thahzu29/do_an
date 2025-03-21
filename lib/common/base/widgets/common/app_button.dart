@@ -10,6 +10,7 @@ class AppButton extends StatelessWidget {
   final double height;
   final double width;
   final bool isLoading;
+  final double fontSize;
 
   const AppButton({
     super.key,
@@ -19,8 +20,9 @@ class AppButton extends StatelessWidget {
     this.textColor,
     this.borderRadius = 20.0,
     this.height = 61.0,
-    this.width = double.infinity, 
+    this.width = double.infinity,
     this.isLoading = false,
+    this.fontSize = 20.0,
   });
 
   @override
@@ -40,14 +42,14 @@ class AppButton extends StatelessWidget {
         onPressed: isLoading ? null : onPressed,
         child: isLoading
             ? const SizedBox(
-                width: 24,
-                height: 24,
-                child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2),
-              )
+          width: 24,
+          height: 24,
+          child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2),
+        )
             : Text(
-                text,
-                style: AppStyles.STYLE_20,
-              ),
+          text,
+          style: AppStyles.STYLE_20.copyWith(fontSize: fontSize),
+        ),
       ),
     );
   }

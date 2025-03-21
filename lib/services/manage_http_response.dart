@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:multi_store/resource/theme/app_colors.dart';
 
 
 void manageHttpResponse({
@@ -27,5 +28,9 @@ void manageHttpResponse({
 }
 
 void showSnackBar(BuildContext context, String title){
-  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(title)));
+  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+      margin: const EdgeInsets.all(15),
+      behavior: SnackBarBehavior.floating,
+      backgroundColor: AppColors.bluePrimary,
+      content: Text(title)));
 }
